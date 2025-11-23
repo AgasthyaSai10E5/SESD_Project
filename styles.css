@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    z-index: 1;
+}
+
+#home {
+    position: relative;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#home img {
+    height: 100vh;
+    object-fit: cover;
+    width: 100%;
+}
+
+#home div {
+    position: absolute;
+    top: 100;
+    left: 25;
+    border: 5px solid black;
+    text-align: left;
+    background-color: black;
+    opacity: 60%;
+    font-size: x-large;
+}
+
+article {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.std {
+    display: grid;
+    grid-template-columns: 259px 259px 259px 259px;
+    column-gap: 48px;
+    row-gap: 48px;
+}
+
+.stadium .hover-button {
+    display: none;
+    position: absolute;  
+    top: 25%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stadium:hover .hover-button {
+    display: block;
+}
+
+
+
+.stadium {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: cubic-bezier();
+}
+
+.stadium img {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.stadium img:hover {
+    background-color: black;
+    opacity: 40%;
+}
+
+#history{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;    
+}
+
+
+#contact{
+    background-color: #333;
+}
+
+.contact {   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 160px;
+   
+}
+
+.follow{
+    
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+.head{
+    color: white;
+}
+
+form {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    color: black;
+    background-color: white;
+    border:none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    /* border: none; */
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.ic {
+ margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+.main-content{
+    height: 100vh;
+    width: 100%;
+}
+
+button a{
+text-decoration: none;
+color: white;
+}
+button a:hover{
+    color: white;
+}
+.stad{
+    display: flex;
+    justify-content: center;
+}
+
+.tab{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#data {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #data td, #data th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #data tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #data tr:hover {background-color: #ddd;}
+  
+  #data th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color:  #333;;
+    color: white;
+  }
